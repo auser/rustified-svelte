@@ -4,7 +4,7 @@ import wasmPack from 'vite-plugin-wasm-pack';
 import { purgeCss } from "vite-plugin-tailwind-purgecss";
 
 export default defineConfig({
-	plugins: [sveltekit(), wasmPack('./my-crate'), purgeCss({
+	plugins: [sveltekit(), wasmPack('./passgen'), purgeCss({
 		safelist: {
 			greedy: [/svelte-/, /^hljs-/, /^sl-/],
 		}

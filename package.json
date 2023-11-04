@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "npm run build:wasm && vite dev",
-		"build:wasm": "wasm-pack build ./crates/imagery  --target web && touch ./vite.config.ts",
+		"build:wasm": "wasm-pack build ./passgen  --target web && touch ./vite.config.ts",
 		"build:site": "vite build",
 		"build": "npm run build:wasm && npm run build:site",
 		"preview": "vite preview",
